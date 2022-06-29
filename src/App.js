@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import Reloj from './components/Reloj';
+import Contador from './components/Contador';
+import RequestComponent from './components/RequestComponent';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+      <h3>Punto 1:</h3>
+        <Contador/>
+      </div>
+
+      <div>
+      <h3>Punto 2:</h3>
+        <Reloj/>
+      </div>
+      
+      <div>
+      <h3>Punto 3:</h3>
+        <RequestComponent/>
+      </div>
     </div>
   );
 }
